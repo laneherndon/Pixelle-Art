@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>PixElle art</title>
+    <style>
+      :root {
+        --canvassize: 400px;
+        --pixelsize: calc(var(--canvassize) / 40);
+      }
+
+      body {
+        background-color: #6c6e77;
+      }
+
+      .canvas {
+        position: absolute;
+        left: calc(50vw - (0.5 * var(--canvassize)));
+        top: calc(50vh - (0.5 * var(--canvassize)));
+
+        width: var(--canvassize);
+        height: var(--canvassize);
+
+        border: 1px solid white;
+      }
+
+      .pixel {
+        width: var(--pixelsize);
+        height: var(--pixelsize);
+
+        border: 1px solid white;
+
+        box-shadow: var(--pixelsize) var(--pixelsize) 0 #fed704;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="canvas">
+      <div class="pixel"></div>
+    </div>
+  </body>
+</html>
